@@ -12,7 +12,7 @@ public class Solution {
     }
 }
 
-//方法二：构建数组法
+//方法二：构建数组法 构建数组，一步一步直到第n个
 
 import java.util.ArrayList;
 public class Solution {
@@ -30,7 +30,7 @@ public class Solution {
     }
 }
 
-// 方法三： 循环
+// 方法三： 循环 用两个变量代替当前求解数前两个位置的数字，比解法2快而且占用内存小
 public class Solution {
     public int Fibonacci(int n) {
         if(n == 0) return 0;
@@ -48,3 +48,17 @@ public class Solution {
 }
 
 //解法四 ：动态规划
+public class Solution {
+    public int Fibonacci(int n) {
+        if(n == 0) return 0;
+        if(n == 1) return 1;
+        int pre = 0;
+        int res = 1;
+        n -= 2;
+        while(n-- >= 0){
+            res = pre + res;
+            pre = res - pre;
+        }
+        return res;
+    }
+}
