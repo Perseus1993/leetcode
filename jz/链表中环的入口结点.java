@@ -84,3 +84,27 @@ public class Solution {
         return fast2;
     }
 }
+//解法3
+public class Solution {
+
+    public ListNode EntryNodeOfLoop(ListNode pHead)
+    {
+        ListNode slow = pHead;
+        ListNode fast = pHead;
+        if(fast==null||fast.next==null) return null;
+        while(fast != null && fast.next != null){
+            fast = fast.next.next;
+            slow = slow.next;
+            if(slow == fast){
+                break;
+            }
+        }
+
+        fast = pHead;
+        while(fast != slow){
+            fast = fast.next;
+            slow = slow.next;
+        }
+        return slow;
+    }
+}
