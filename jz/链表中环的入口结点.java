@@ -84,7 +84,7 @@ public class Solution {
         return fast2;
     }
 }
-//解法3
+//解法4
 public class Solution {
 
     public ListNode EntryNodeOfLoop(ListNode pHead)
