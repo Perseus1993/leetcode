@@ -1,5 +1,4 @@
 //解法1
-import java.util.ArrayList;
 import java.util.*;
 public class Solution {
     public boolean IsPopOrder(int [] pushA,int [] popA) {
