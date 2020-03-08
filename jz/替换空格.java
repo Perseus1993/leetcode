@@ -20,7 +20,7 @@ public class Solution {
     }
 }
 
-//比解法3
+//解法3
 
 public class Solution {
     public String replaceSpace(StringBuffer str) {
