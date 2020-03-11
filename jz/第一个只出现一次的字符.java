@@ -1,4 +1,5 @@
 //解法1
+//原生态hashmap方法，干就完了
 import java.util.HashMap;
 public class Solution {
     public int FirstNotRepeatingChar(String str) {
@@ -16,6 +17,7 @@ public class Solution {
     }
 }
 //解法2
+//利用字符有限来进行哈希，注意ascii码是从0开始， 因此初始化数组时候要小心
 public class Solution {
     public int FirstNotRepeatingChar(String str) {
         int[] arr = new int['z' + 1];
@@ -31,6 +33,7 @@ public class Solution {
     }
 }
 //解法3
+//24 + 24个位置行哈希，比上一个方法省点空间
 public class Solution {
     public int FirstNotRepeatingChar(String str) {
         int[] arr = new int[58];

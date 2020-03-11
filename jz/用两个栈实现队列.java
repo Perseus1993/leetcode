@@ -17,6 +17,7 @@ public class Solution {
             stack2.push(stack1.pop());
 
         }
+        //这一步也可以不用每次弹出去就返回stack1，而是判断stack2空了再找stack1要
         int res = stack2.pop();
         while(stack2.isEmpty() == false){
             stack1.push(stack2.pop());
