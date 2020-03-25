@@ -1,4 +1,5 @@
 //解法1
+//前序遍历是先输出根节点的，因此前序遍历第一个元素iu是中序遍历左右子树的分界线
 import java.util.Arrays;
 public class Solution {
     public TreeNode reConstructBinaryTree(int [] pre,int [] in) {
