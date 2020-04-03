@@ -1,3 +1,5 @@
+//思考点的如果不连续的多个最小值怎么办，最小值弹出后怎么更新最小值
+//这道题解题思路是建立一个min栈，存放min，有多少存多少
 import java.util.Stack;
 
 public class Solution {

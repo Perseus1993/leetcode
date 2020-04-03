@@ -13,7 +13,8 @@ public class TreeNode {
 */
 
 //解法1
-//分为两步：第一是找到和root2节点相等的点，第二步再判断这个相等的点下面的点都符合要求
+//分为两步：第一是找到和root2节点相等的点，第二步再判断这个相等的点下面的点都符合要求。注释掉的部分是错误的思路（假设和子结构根节点相同的点有多个的情况下出错）
+
 public class Solution {
     public boolean HasSubtree(TreeNode root1,TreeNode root2) {
         if(root1 == null || root2 ==null) {
